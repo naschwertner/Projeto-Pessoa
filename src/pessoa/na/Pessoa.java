@@ -13,10 +13,13 @@ public abstract class Pessoa extends Object {
 	}
 	
 	//tostring --> metodo para retornar os dados //(tostring vem da classe object)
-	@Override
-	public String toString() {
-		return nome+ " "+ cpf+ " ";
-	}
+    @Override
+    public String toString() {
+    	String aux = super.toString();
+    	aux += "Nome " + nome + "\n";
+    	aux += "CPF " + cpf + "\n";
+    	return aux;
+    }
 
 	
 //	@Override

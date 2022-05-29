@@ -21,9 +21,10 @@ public class Vendedor extends Empregado implements Salario {
 	//tostring --> metodo para retornar os dados (vem da classe pessoa)
 	@Override
 	public String toString() {
-		return super.toString() +
-		totalDasVendas+ "total das vendas: " +
-		comissao+ "Comissão: "  + "%n" ;
+		String aux = super.toString();
+		aux += "Total das vendas R$" + totalDasVendas + "/n";
+		aux += "Comissão " + comissao + "%\n";
+		return aux;
 	}
 	
 

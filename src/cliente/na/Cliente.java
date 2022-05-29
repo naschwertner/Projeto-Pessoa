@@ -12,20 +12,14 @@ public class Cliente extends Pessoa{
 	}
 
 	//tostring --> metodo para retornar os dados (vem da classe pessoa)
+
 	@Override
 	public String toString() {
-		return super.toString() + valorDaDivida+ "Valor da divida R$ " ;
+		String aux = super.toString();
+		aux += "Valor da divida " + valorDaDivida + "\n";
+		return aux;
 	}
-	//super.toString() pega o tostring da classe Pessoa
 
-	
-	//@Override
-		//public String toString() {
-		//	String aux = super.toString();
-		//	aux += "Valor da dívida R$ " + valorDaDivida + "\n";
-		//	return aux;
-		//}
-	
 	
 	public double getValorDaDivida() {
 		return valorDaDivida;

@@ -13,15 +13,11 @@ public class Empregado extends Pessoa {
 	//tostring --> metodo para retornar os dados (vem da classe pessoa)
 	@Override
 	public String toString() {
-		return super.toString() + 
-		matricula+ "Maticula: ";
+		String aux = super.toString();
+		aux += "Matricula " + matricula + "\n";
+		return aux;
 	}
 	
-	//@Override 
-	//public String toString() {
-		//String aux = super.toString();
-		//aux += "Matrícula: " + matricula +"\n";
-		//return aux;
-	//}
+	
 	
 }

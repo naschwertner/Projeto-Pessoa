@@ -22,11 +22,11 @@ public class Gerente extends Empregado implements Bonus {
 	//tostring --> metodo para retornar os dados (vem da classe pessoa)
 	@Override
 	public String toString() {
-		return super.toString() + 
-		salario+ "Salario R$ " +
-		bonus+ "Bônus "  + "%n";
+		String aux = super.toString();
+		aux += "Salario" + salario + "\n";
+		aux += "bonus" + bonus + "\n";
+	    return aux;
 	}
-
 	
 	public double getSalario() {
 		return salario;
